@@ -26,7 +26,9 @@
     }
 
     .tutorial a {
-      display: inline-block;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       background: #ffe5e5;
       border: 2px solid #ffb3b3;
       color: #d43f3f;
@@ -80,9 +82,10 @@
       transform: scale(1.05);
     }
 
-    .step img {
+    svg {
       width: 36px;
       height: 36px;
+      fill: #d43f3f;
     }
   </style>
 </head>
@@ -92,35 +95,54 @@
   <div class="tutorial">
     <h3>📘 Setup Tutorial</h3>
     <a href="https://avieshek.wordpress.com/2024/06/11/how-to-sideload-on-ios/"
-      target="_blank" rel="noopener noreferrer">View Tutorial</a>
+      target="_blank" rel="noopener noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm.25 15h-1.5v-6h1.5zm0-8h-1.5V7h1.5z"/>
+      </svg>
+      View Tutorial
+    </a>
   </div>
 
   <div class="steps-container">
     <div class="step">
       <h3>Step 1: Install DNS Profile</h3>
-      <a href="https://github.com/esigncert/khoindvn/releases/download/DNS/signed_khoindvn.mobileconfig" target="_blank" rel="noopener noreferrer">
-        <img src="./img/icons/download.png" alt="Download DNS Profile" />
+      <a href="https://github.com/esigncert/khoindvn/releases/download/DNS/signed_khoindvn.mobileconfig"
+        target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 3v12.586l4.293-4.293 1.414 1.414L12 19.414l-5.707-5.707 1.414-1.414L11 15.586V3z"/>
+          <path d="M5 19h14v2H5z"/>
+        </svg>
       </a>
     </div>
 
     <div class="step">
       <h3>Step 2: Download Certificate</h3>
-      <a href="https://github.com/esigncert/khoindvn/raw/refs/heads/main/document/DNS/Certs-Khoindvn.zip" target="_blank" rel="noopener noreferrer">
-        <img src="./img/icons/download.png" alt="Download Certificate" />
+      <a href="https://github.com/esigncert/khoindvn/raw/refs/heads/main/document/DNS/Certs-Khoindvn.zip"
+        target="_blank" rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 3v12.586l4.293-4.293 1.414 1.414L12 19.414l-5.707-5.707 1.414-1.414L11 15.586V3z"/>
+          <path d="M5 19h14v2H5z"/>
+        </svg>
       </a>
     </div>
 
     <div class="step">
       <h3>Step 3: Download the App</h3>
       <a href="https://api.khoindvn.io.vn/6rkpFX" target="_blank" rel="noopener noreferrer">
-        <img src="./img/icons/download.png" alt="Download App" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 3v12.586l4.293-4.293 1.414 1.414L12 19.414l-5.707-5.707 1.414-1.414L11 15.586V3z"/>
+          <path d="M5 19h14v2H5z"/>
+        </svg>
       </a>
     </div>
 
     <div class="step">
       <h3>Step 4: Install JyotiGPT</h3>
       <a href="https://y4shg.github.io/appstore" target="_blank" rel="noopener noreferrer">
-        <img src="./img/icons/download.png" alt="Install JyotiGPT" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M12 3v12.586l4.293-4.293 1.414 1.414L12 19.414l-5.707-5.707 1.414-1.414L11 15.586V3z"/>
+          <path d="M5 19h14v2H5z"/>
+        </svg>
       </a>
     </div>
   </div>
