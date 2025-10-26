@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KSign Downloads</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f5f7;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .prj-collum {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 90%;
+      max-width: 500px;
+    }
+
+    .project {
+      background: white;
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .project h3 {
+      margin-bottom: 1rem;
+    }
+
+    .project img {
+      width: 40px;
+      height: 40px;
+      transition: opacity 0.2s ease;
+    }
+
+    .project a:hover img {
+      opacity: 0.7;
+    }
+
+    .download-btn {
+      display: inline-block;
+      margin-top: 2.5rem;
+      background: #0078ff;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0, 120, 255, 0.3);
+      transition: background 0.2s ease, transform 0.15s ease;
+    }
+
+    .download-btn:hover {
+      background: #0063d6;
+      transform: scale(1.03);
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KSign Downloads</h1>
+    <p>Official DNS and certificate files for installation</p>
+  </header>
+
+  <div class="prj-collum">
+    <div class="project">
+      <h3>Install DNS Profile</h3>
+      <a href="https://github.com/esigncert/khoindvn/releases/download/DNS/signed_khoindvn.mobileconfig" target="_blank" rel="noopener noreferrer">
+        <img src="./img/icons/download.png" alt="Download DNS Profile" />
+      </a>
+    </div>
+
+    <div class="project">
+      <h3>Download Certificate</h3>
+      <a href="https://github.com/esigncert/khoindvn/raw/refs/heads/main/document/DNS/Certs-Khoindvn.zip" target="_blank" rel="noopener noreferrer">
+        <img src="./img/icons/download.png" alt="Download Certificate" />
+      </a>
+    </div>
+
+    <div class="project">
+      <h3>Tutorial</h3>
+      <a href="https://avieshek.wordpress.com/2024/06/11/how-to-sideload-on-ios/" target="_blank" rel="noopener noreferrer">
+        <img src="./img/icons/info.png" alt="Tutorial" />
+      </a>
+    </div>
+  </div>
+
+  <a href="https://api.khoindvn.io.vn/6rkpFX" class="download-btn" target="_blank" rel="noopener noreferrer">
+    ⬇️ Download App
+  </a>
+
+  <footer>
+    © 2025 KSign by khoindvn
+  </footer>
+</body>
+</html>
